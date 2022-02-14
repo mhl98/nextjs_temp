@@ -27,6 +27,7 @@ export default function Home() {
 
         <div className="text-center mt-10">
           <Image
+            className="rounded-lg shadow-xl"
             src={"/photo_2022-02-14_17-29-55.jpg"}
             height={400}
             width={500}
@@ -36,6 +37,7 @@ export default function Home() {
 
         <div className="text-center mt-10">
           <Image
+            className="rounded-lg shadow-xl"
             src={"/photo_2022-02-14_17-27-35.jpg"}
             height={400}
             width={500}

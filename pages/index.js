@@ -25,7 +25,7 @@ export default function Home() {
           <p className="text-2xl">i just wanna say tank u so muchhh</p>
         </div>
 
-        <div className="text-center mt-10">
+        {/* <div className="text-center mt-10">
           <Image
             className="rounded-lg shadow-xl"
             src={"/photo_2022-02-14_17-29-55.jpg"}
@@ -43,7 +43,7 @@ export default function Home() {
             width={500}
           />
           <p className="text-2xl">mash porya</p>
-        </div>
+        </div> */}
 
         <Particles
           className={styles.par}

@@ -1,8 +1,10 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Image from "next/image";
+import Link from "next/link";
+
 const navigation = [
-  { name: "SSG", href: "#" },
-  { name: "SSR", href: "#" },
-  { name: "Shop", href: "#" },
+  { name: "SSG", href: "/ssg" },
+  { name: "SSR", href: "/ssr" },
+  { name: "Shop", href: "/shop" },
 ];
 
 export default function Header() {
@@ -13,7 +15,9 @@ export default function Header() {
           <div className="flex items-center">
             <a href="#">
               <span className="sr-only">Workflow</span>
-              <img
+              <Image
+                width={40}
+                height={40}
                 className="h-10 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white"
                 alt=""
@@ -21,13 +25,11 @@ export default function Header() {
             </a>
             <div className="hidden ml-10 space-x-8 lg:block">
               {navigation.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-base font-medium text-white hover:text-indigo-50"
-                >
-                  {link.name}
-                </a>
+                <Link key={link.name} href={link.href}>
+                  <a className="text-base font-medium text-white hover:text-indigo-50">
+                    {link.name}
+                  </a>
+                </Link>
               ))}
             </div>
           </div>

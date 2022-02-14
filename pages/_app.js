@@ -7,7 +7,9 @@ function MyApp({ Component, pageProps }) {
     <>
       {" "}
       <Header />
+      {/* <div className="container mx-0   md:mx-[120px]"> */}
       <Component {...pageProps} />
+      {/* </div> */}
       <Footer />
     </>
   );
